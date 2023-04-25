@@ -103,14 +103,6 @@
       </Compile>
     </ItemGroup>
     <ItemGroup>
-		<EmbeddedResource Include="Resources\Roboto-Regular.ttf" />
-		<EmbeddedResource Include="Resources\Roboto-Medium.ttf" />
-		<EmbeddedResource Include="Resources\Roboto-Bold.ttf" />
-		<EmbeddedResource Include="Resources\Roboto-Black.ttf" />
-		<EmbeddedResource Include="Resources\Roboto-Light.ttf" />
-		<EmbeddedResource Include="Resources\Roboto-Thin.ttf" />
-    </ItemGroup>
-    <ItemGroup>
       <Compile Remove="Controls\MaterialMenuStrip.cs" />
     </ItemGroup>
     <ItemGroup>

@@ -1,5 +1,7 @@
 # MaterialSkin 2 for .NET WinForms
 
+> 嵌入 Source Han Sans - [思源黑体中文字体](https://github.com/adobe-fonts/source-han-sans)替换原生字体
+
 Theming .NET WinForms, C# or VB.Net, to Google's Material Design Principles.
 
 > ⚠️ **It's NOT recommended to use this lib for new projects** ⚠️
@@ -118,7 +120,7 @@ Download the precompiled DLL available on the releases section and add it as a e
 #### Compile from the latest master
 
 Clone the project from GitHub, then add the MaterialSkin.csproj to your own solution, then add it as a project reference on your project.
-  
+
 ### 2. Add the MaterialSkin components to your ToolBox
 
 Simply drag the MaterialSkin.dll file into your IDE's ToolBox and all the controls should be added there.
@@ -126,20 +128,20 @@ Simply drag the MaterialSkin.dll file into your IDE's ToolBox and all the contro
 ### 3. Inherit from MaterialForm
 
 Open the code behind your Form you wish to skin. Make it inherit from MaterialForm rather than Form. Don't forget to put the library in your imports, so it can find the MaterialForm class!
-  
+
 #### C# (Form1.cs)
 
 ```cs
 public partial class Form1 : MaterialForm
 ```
-  
+
 #### VB.NET (Form1.Designer.vb)
 
 ```vb
 Partial Class Form1
   Inherits MaterialSkin.Controls.MaterialForm
 ```
-  
+
 ### 4. Initialize your colorscheme
 
 Set your preferred colors & theme. Also add the form to the manager so it keeps updated if the color scheme or theme changes later on.

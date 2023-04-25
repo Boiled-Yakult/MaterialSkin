@@ -168,24 +168,15 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Roboto-Regular.ttf" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\Roboto-Medium.ttf" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\Roboto-Bold.ttf" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\Roboto-Black.ttf" />
-    <EmbeddedResource Include="Resources\Roboto-Light.ttf" />
-    <EmbeddedResource Include="Resources\Roboto-Thin.ttf" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <EmbeddedResource Include="Resources\SourceHanSansCN-Bold.otf" />
+    <EmbeddedResource Include="Resources\SourceHanSansCN-Light.otf" />
+    <EmbeddedResource Include="Resources\SourceHanSansCN-Medium.otf" />
+    <EmbeddedResource Include="Resources\SourceHanSansCN-Normal.otf" />
+    <EmbeddedResource Include="Resources\SourceHanSansCN-Regular.otf" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

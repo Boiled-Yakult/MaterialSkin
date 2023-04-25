@@ -42,12 +42,19 @@
             // And https://www.codeproject.com/Articles/107376/Embedding-Font-To-Resources
 
             // Add font to system table in memory and save the font family
-            addFont(Resources.Roboto_Thin);
-            addFont(Resources.Roboto_Light);
-            addFont(Resources.Roboto_Regular);
-            addFont(Resources.Roboto_Medium);
-            addFont(Resources.Roboto_Bold);
-            addFont(Resources.Roboto_Black);
+            //addFont(Resources.Roboto_Thin);
+            //addFont(Resources.Roboto_Light);
+            //addFont(Resources.Roboto_Regular);
+            //addFont(Resources.Roboto_Medium);
+            //addFont(Resources.Roboto_Bold);
+            //addFont(Resources.Roboto_Black);
+
+            // Add font to system table in memory and save the font family
+            addFont(Resources.SourceHanSansCN_Bold);
+            addFont(Resources.SourceHanSansCN_Light);
+            addFont(Resources.SourceHanSansCN_Medium);
+            addFont(Resources.SourceHanSansCN_Normal);
+            addFont(Resources.SourceHanSansCN_Regular);
 
             RobotoFontFamilies = new Dictionary<string, FontFamily>();
             foreach (FontFamily ff in privateFontCollection.Families.ToArray())
@@ -56,27 +63,50 @@
             }
 
             // create and save font handles for GDI
+            //logicalFonts = new Dictionary<string, IntPtr>(18);
+            //logicalFonts.Add("H1", createLogicalFont("Roboto Light", 96, NativeTextRenderer.logFontWeight.FW_LIGHT));
+            //logicalFonts.Add("H2", createLogicalFont("Roboto Light", 60, NativeTextRenderer.logFontWeight.FW_LIGHT));
+            //logicalFonts.Add("H3", createLogicalFont("Roboto", 48, NativeTextRenderer.logFontWeight.FW_REGULAR));
+            //logicalFonts.Add("H4", createLogicalFont("Roboto", 34, NativeTextRenderer.logFontWeight.FW_REGULAR));
+            //logicalFonts.Add("H5", createLogicalFont("Roboto", 24, NativeTextRenderer.logFontWeight.FW_REGULAR));
+            //logicalFonts.Add("H6", createLogicalFont("Roboto Medium", 20, NativeTextRenderer.logFontWeight.FW_MEDIUM));
+            //logicalFonts.Add("Subtitle1", createLogicalFont("Roboto", 16, NativeTextRenderer.logFontWeight.FW_REGULAR));
+            //logicalFonts.Add("Subtitle2", createLogicalFont("Roboto Medium", 14, NativeTextRenderer.logFontWeight.FW_MEDIUM));
+            //logicalFonts.Add("SubtleEmphasis", createLogicalFont("Roboto", 12, NativeTextRenderer.logFontWeight.FW_NORMAL, 1));
+            //logicalFonts.Add("Body1", createLogicalFont("Roboto", 16, NativeTextRenderer.logFontWeight.FW_REGULAR));
+            //logicalFonts.Add("Body2", createLogicalFont("Roboto", 14, NativeTextRenderer.logFontWeight.FW_REGULAR));
+            //logicalFonts.Add("Button", createLogicalFont("Roboto Medium", 14, NativeTextRenderer.logFontWeight.FW_MEDIUM));
+            //logicalFonts.Add("Caption", createLogicalFont("Roboto", 12, NativeTextRenderer.logFontWeight.FW_REGULAR));
+            //logicalFonts.Add("Overline", createLogicalFont("Roboto", 10, NativeTextRenderer.logFontWeight.FW_REGULAR));
+            //// Logical fonts for textbox animation
+            //logicalFonts.Add("textBox16", createLogicalFont("Roboto", 16, NativeTextRenderer.logFontWeight.FW_REGULAR));
+            //logicalFonts.Add("textBox15", createLogicalFont("Roboto", 15, NativeTextRenderer.logFontWeight.FW_REGULAR));
+            //logicalFonts.Add("textBox14", createLogicalFont("Roboto", 14, NativeTextRenderer.logFontWeight.FW_REGULAR));
+            //logicalFonts.Add("textBox13", createLogicalFont("Roboto Medium", 13, NativeTextRenderer.logFontWeight.FW_MEDIUM));
+            //logicalFonts.Add("textBox12", createLogicalFont("Roboto Medium", 12, NativeTextRenderer.logFontWeight.FW_MEDIUM));
+
+            // create and save font handles for GDI
             logicalFonts = new Dictionary<string, IntPtr>(18);
-            logicalFonts.Add("H1", createLogicalFont("Roboto Light", 96, NativeTextRenderer.logFontWeight.FW_LIGHT));
-            logicalFonts.Add("H2", createLogicalFont("Roboto Light", 60, NativeTextRenderer.logFontWeight.FW_LIGHT));
-            logicalFonts.Add("H3", createLogicalFont("Roboto", 48, NativeTextRenderer.logFontWeight.FW_REGULAR));
-            logicalFonts.Add("H4", createLogicalFont("Roboto", 34, NativeTextRenderer.logFontWeight.FW_REGULAR));
-            logicalFonts.Add("H5", createLogicalFont("Roboto", 24, NativeTextRenderer.logFontWeight.FW_REGULAR));
-            logicalFonts.Add("H6", createLogicalFont("Roboto Medium", 20, NativeTextRenderer.logFontWeight.FW_MEDIUM));
-            logicalFonts.Add("Subtitle1", createLogicalFont("Roboto", 16, NativeTextRenderer.logFontWeight.FW_REGULAR));
-            logicalFonts.Add("Subtitle2", createLogicalFont("Roboto Medium", 14, NativeTextRenderer.logFontWeight.FW_MEDIUM));
-            logicalFonts.Add("SubtleEmphasis", createLogicalFont("Roboto", 12, NativeTextRenderer.logFontWeight.FW_NORMAL, 1));
-            logicalFonts.Add("Body1", createLogicalFont("Roboto", 16, NativeTextRenderer.logFontWeight.FW_REGULAR));
-            logicalFonts.Add("Body2", createLogicalFont("Roboto", 14, NativeTextRenderer.logFontWeight.FW_REGULAR));
-            logicalFonts.Add("Button", createLogicalFont("Roboto Medium", 14, NativeTextRenderer.logFontWeight.FW_MEDIUM));
-            logicalFonts.Add("Caption", createLogicalFont("Roboto", 12, NativeTextRenderer.logFontWeight.FW_REGULAR));
-            logicalFonts.Add("Overline", createLogicalFont("Roboto", 10, NativeTextRenderer.logFontWeight.FW_REGULAR));
+            logicalFonts.Add("H1", createLogicalFont("思源黑体 CN Normal", 96, NativeTextRenderer.logFontWeight.FW_LIGHT));
+            logicalFonts.Add("H2", createLogicalFont("思源黑体 CN Normal", 60, NativeTextRenderer.logFontWeight.FW_LIGHT));
+            logicalFonts.Add("H3", createLogicalFont("思源黑体 CN Normal", 48, NativeTextRenderer.logFontWeight.FW_REGULAR));
+            logicalFonts.Add("H4", createLogicalFont("思源黑体 CN Normal", 34, NativeTextRenderer.logFontWeight.FW_REGULAR));
+            logicalFonts.Add("H5", createLogicalFont("思源黑体 CN Normal", 24, NativeTextRenderer.logFontWeight.FW_REGULAR));
+            logicalFonts.Add("H6", createLogicalFont("思源黑体 CN Medium", 20, NativeTextRenderer.logFontWeight.FW_MEDIUM));
+            logicalFonts.Add("Subtitle1", createLogicalFont("思源黑体 CN Normal", 16, NativeTextRenderer.logFontWeight.FW_REGULAR));
+            logicalFonts.Add("Subtitle2", createLogicalFont("思源黑体 CN Medium", 14, NativeTextRenderer.logFontWeight.FW_MEDIUM));
+            logicalFonts.Add("SubtleEmphasis", createLogicalFont("思源黑体 CN Normal", 12, NativeTextRenderer.logFontWeight.FW_NORMAL, 1));
+            logicalFonts.Add("Body1", createLogicalFont("思源黑体 CN Normal", 16, NativeTextRenderer.logFontWeight.FW_REGULAR));
+            logicalFonts.Add("Body2", createLogicalFont("思源黑体 CN Normal", 14, NativeTextRenderer.logFontWeight.FW_REGULAR));
+            logicalFonts.Add("Button", createLogicalFont("思源黑体 CN Medium", 14, NativeTextRenderer.logFontWeight.FW_MEDIUM));
+            logicalFonts.Add("Caption", createLogicalFont("思源黑体 CN Normal", 12, NativeTextRenderer.logFontWeight.FW_REGULAR));
+            logicalFonts.Add("Overline", createLogicalFont("思源黑体 CN Normal", 10, NativeTextRenderer.logFontWeight.FW_REGULAR));
             // Logical fonts for textbox animation
-            logicalFonts.Add("textBox16", createLogicalFont("Roboto", 16, NativeTextRenderer.logFontWeight.FW_REGULAR));
-            logicalFonts.Add("textBox15", createLogicalFont("Roboto", 15, NativeTextRenderer.logFontWeight.FW_REGULAR));
-            logicalFonts.Add("textBox14", createLogicalFont("Roboto", 14, NativeTextRenderer.logFontWeight.FW_REGULAR));
-            logicalFonts.Add("textBox13", createLogicalFont("Roboto Medium", 13, NativeTextRenderer.logFontWeight.FW_MEDIUM));
-            logicalFonts.Add("textBox12", createLogicalFont("Roboto Medium", 12, NativeTextRenderer.logFontWeight.FW_MEDIUM));
+            logicalFonts.Add("textBox16", createLogicalFont("思源黑体 CN Normal", 16, NativeTextRenderer.logFontWeight.FW_REGULAR));
+            logicalFonts.Add("textBox15", createLogicalFont("思源黑体 CN Normal", 15, NativeTextRenderer.logFontWeight.FW_REGULAR));
+            logicalFonts.Add("textBox14", createLogicalFont("思源黑体 CN Normal", 14, NativeTextRenderer.logFontWeight.FW_REGULAR));
+            logicalFonts.Add("textBox13", createLogicalFont("思源黑体 CN Medium", 13, NativeTextRenderer.logFontWeight.FW_MEDIUM));
+            logicalFonts.Add("textBox12", createLogicalFont("思源黑体 CN Medium", 12, NativeTextRenderer.logFontWeight.FW_MEDIUM));
         }
 
         // Destructor
@@ -235,7 +265,7 @@
         public Brush CheckboxOffBrush => Theme == Themes.LIGHT ? CHECKBOX_OFF_LIGHT_BRUSH : CHECKBOX_OFF_DARK_BRUSH;
         public Color CheckBoxOffDisabledColor => Theme == Themes.LIGHT ? CHECKBOX_OFF_DISABLED_LIGHT : CHECKBOX_OFF_DISABLED_DARK;
         public Brush CheckBoxOffDisabledBrush => Theme == Themes.LIGHT ? CHECKBOX_OFF_DISABLED_LIGHT_BRUSH : CHECKBOX_OFF_DISABLED_DARK_BRUSH;
-        
+
         // Switch
         public Color SwitchOffColor => Theme == Themes.LIGHT ? CHECKBOX_OFF_DARK : CHECKBOX_OFF_LIGHT; // yes, I re-use the checkbox color, sue me
         public Color SwitchOffThumbColor => Theme == Themes.LIGHT ? SWITCH_OFF_THUMB_LIGHT : SWITCH_OFF_THUMB_DARK;
@@ -294,51 +324,97 @@
 
         public Font getFontByType(fontType type)
         {
+            //switch (type)
+            //{
+            //    case fontType.H1:
+            //        return new Font(RobotoFontFamilies["Roboto_Light"], 96f, FontStyle.Regular, GraphicsUnit.Pixel);
+
+            //    case fontType.H2:
+            //        return new Font(RobotoFontFamilies["Roboto_Light"], 60f, FontStyle.Regular, GraphicsUnit.Pixel);
+
+            //    case fontType.H3:
+            //        return new Font(RobotoFontFamilies["Roboto"], 48f, FontStyle.Bold, GraphicsUnit.Pixel);
+
+            //    case fontType.H4:
+            //        return new Font(RobotoFontFamilies["Roboto"], 34f, FontStyle.Bold, GraphicsUnit.Pixel);
+
+            //    case fontType.H5:
+            //        return new Font(RobotoFontFamilies["Roboto"], 24f, FontStyle.Bold, GraphicsUnit.Pixel);
+
+            //    case fontType.H6:
+            //        return new Font(RobotoFontFamilies["Roboto_Medium"], 20f, FontStyle.Bold, GraphicsUnit.Pixel);
+
+            //    case fontType.Subtitle1:
+            //        return new Font(RobotoFontFamilies["Roboto"], 16f, FontStyle.Regular, GraphicsUnit.Pixel);
+
+            //    case fontType.Subtitle2:
+            //        return new Font(RobotoFontFamilies["Roboto_Medium"], 14f, FontStyle.Bold, GraphicsUnit.Pixel);
+
+            //    case fontType.SubtleEmphasis:
+            //        return new Font(RobotoFontFamilies["Roboto"], 12f, FontStyle.Italic, GraphicsUnit.Pixel);
+
+            //    case fontType.Body1:
+            //        return new Font(RobotoFontFamilies["Roboto"], 14f, FontStyle.Regular, GraphicsUnit.Pixel);
+
+            //    case fontType.Body2:
+            //        return new Font(RobotoFontFamilies["Roboto"], 12f, FontStyle.Regular, GraphicsUnit.Pixel);
+
+            //    case fontType.Button:
+            //        return new Font(RobotoFontFamilies["Roboto"], 14f, FontStyle.Bold, GraphicsUnit.Pixel);
+
+            //    case fontType.Caption:
+            //        return new Font(RobotoFontFamilies["Roboto"], 12f, FontStyle.Regular, GraphicsUnit.Pixel);
+
+            //    case fontType.Overline:
+            //        return new Font(RobotoFontFamilies["Roboto"], 10f, FontStyle.Regular, GraphicsUnit.Pixel);
+            //}
+            //return new Font(RobotoFontFamilies["Roboto"], 14f, FontStyle.Regular, GraphicsUnit.Pixel);
+
             switch (type)
             {
                 case fontType.H1:
-                    return new Font(RobotoFontFamilies["Roboto_Light"], 96f, FontStyle.Regular, GraphicsUnit.Pixel);
+                    return new Font(RobotoFontFamilies["思源黑体_CN_Normal"], 96f, FontStyle.Regular, GraphicsUnit.Pixel);
 
                 case fontType.H2:
-                    return new Font(RobotoFontFamilies["Roboto_Light"], 60f, FontStyle.Regular, GraphicsUnit.Pixel);
+                    return new Font(RobotoFontFamilies["思源黑体_CN_Normal"], 60f, FontStyle.Regular, GraphicsUnit.Pixel);
 
                 case fontType.H3:
-                    return new Font(RobotoFontFamilies["Roboto"], 48f, FontStyle.Bold, GraphicsUnit.Pixel);
+                    return new Font(RobotoFontFamilies["思源黑体_CN_Normal"], 48f, FontStyle.Bold, GraphicsUnit.Pixel);
 
                 case fontType.H4:
-                    return new Font(RobotoFontFamilies["Roboto"], 34f, FontStyle.Bold, GraphicsUnit.Pixel);
+                    return new Font(RobotoFontFamilies["思源黑体_CN_Normal"], 34f, FontStyle.Bold, GraphicsUnit.Pixel);
 
                 case fontType.H5:
-                    return new Font(RobotoFontFamilies["Roboto"], 24f, FontStyle.Bold, GraphicsUnit.Pixel);
+                    return new Font(RobotoFontFamilies["思源黑体_CN_Normal"], 24f, FontStyle.Bold, GraphicsUnit.Pixel);
 
                 case fontType.H6:
-                    return new Font(RobotoFontFamilies["Roboto_Medium"], 20f, FontStyle.Bold, GraphicsUnit.Pixel);
+                    return new Font(RobotoFontFamilies["思源黑体_CN_Medium"], 20f, FontStyle.Bold, GraphicsUnit.Pixel);
 
                 case fontType.Subtitle1:
-                    return new Font(RobotoFontFamilies["Roboto"], 16f, FontStyle.Regular, GraphicsUnit.Pixel);
+                    return new Font(RobotoFontFamilies["思源黑体_CN_Normal"], 16f, FontStyle.Regular, GraphicsUnit.Pixel);
 
                 case fontType.Subtitle2:
-                    return new Font(RobotoFontFamilies["Roboto_Medium"], 14f, FontStyle.Bold, GraphicsUnit.Pixel);
-                
+                    return new Font(RobotoFontFamilies["思源黑体_CN_Medium"], 14f, FontStyle.Bold, GraphicsUnit.Pixel);
+
                 case fontType.SubtleEmphasis:
-                    return new Font(RobotoFontFamilies["Roboto"], 12f, FontStyle.Italic, GraphicsUnit.Pixel);
+                    return new Font(RobotoFontFamilies["思源黑体_CN_Normal"], 12f, FontStyle.Italic, GraphicsUnit.Pixel);
 
                 case fontType.Body1:
-                    return new Font(RobotoFontFamilies["Roboto"], 14f, FontStyle.Regular, GraphicsUnit.Pixel);
+                    return new Font(RobotoFontFamilies["思源黑体_CN_Normal"], 14f, FontStyle.Regular, GraphicsUnit.Pixel);
 
                 case fontType.Body2:
-                    return new Font(RobotoFontFamilies["Roboto"], 12f, FontStyle.Regular, GraphicsUnit.Pixel);
+                    return new Font(RobotoFontFamilies["思源黑体_CN_Normal"], 12f, FontStyle.Regular, GraphicsUnit.Pixel);
 
                 case fontType.Button:
-                    return new Font(RobotoFontFamilies["Roboto"], 14f, FontStyle.Bold, GraphicsUnit.Pixel);
+                    return new Font(RobotoFontFamilies["思源黑体_CN_Normal"], 14f, FontStyle.Bold, GraphicsUnit.Pixel);
 
                 case fontType.Caption:
-                    return new Font(RobotoFontFamilies["Roboto"], 12f, FontStyle.Regular, GraphicsUnit.Pixel);
+                    return new Font(RobotoFontFamilies["思源黑体_CN_Normal"], 12f, FontStyle.Regular, GraphicsUnit.Pixel);
 
                 case fontType.Overline:
-                    return new Font(RobotoFontFamilies["Roboto"], 10f, FontStyle.Regular, GraphicsUnit.Pixel);
+                    return new Font(RobotoFontFamilies["思源黑体_CN_Normal"], 10f, FontStyle.Regular, GraphicsUnit.Pixel);
             }
-            return new Font(RobotoFontFamilies["Roboto"], 14f, FontStyle.Regular, GraphicsUnit.Pixel);
+            return new Font(RobotoFontFamilies["思源黑体_CN_Normal"], 14f, FontStyle.Regular, GraphicsUnit.Pixel);
         }
 
         /// <summary>
