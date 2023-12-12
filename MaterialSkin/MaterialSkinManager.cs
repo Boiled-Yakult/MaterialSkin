@@ -22,6 +22,8 @@
 
         public event SkinManagerEventHandler ThemeChanged;
 
+
+
         /// <summary>
         /// Set this property to false to stop enforcing the backcolor on non-materialSkin components
         /// </summary>
