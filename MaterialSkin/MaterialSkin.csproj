@@ -172,11 +172,12 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <EmbeddedResource Include="Resources\SourceHanSansCN-Bold.otf" />
-    <EmbeddedResource Include="Resources\SourceHanSansCN-Light.otf" />
-    <EmbeddedResource Include="Resources\SourceHanSansCN-Medium.otf" />
-    <EmbeddedResource Include="Resources\SourceHanSansCN-Normal.otf" />
-    <EmbeddedResource Include="Resources\SourceHanSansCN-Regular.otf" />
+    <None Include="Resources\HarmonyOS_Sans_SC_Black.ttf" />
+    <None Include="Resources\HarmonyOS_Sans_SC_Bold.ttf" />
+    <None Include="Resources\HarmonyOS_Sans_SC_Light.ttf" />
+    <None Include="Resources\HarmonyOS_Sans_SC_Medium.ttf" />
+    <None Include="Resources\HarmonyOS_Sans_SC_Regular.ttf" />
+    <None Include="Resources\HarmonyOS_Sans_SC_Thin.ttf" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

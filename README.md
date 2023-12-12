@@ -1,6 +1,7 @@
 # MaterialSkin 2 for .NET WinForms
+> 嵌入 HarmonyOS Sans - [HarmonyOS Sans 字体](https://developer.huawei.com/consumer/cn/design/resource/) 替换思源黑体
 
-> 嵌入 Source Han Sans - [思源黑体中文字体](https://github.com/adobe-fonts/source-han-sans)替换原生字体
+> ~~嵌入 Source Han Sans - [思源黑体中文字体](https://github.com/adobe-fonts/source-han-sans)替换原生字体~~
 
 Theming .NET WinForms, C# or VB.Net, to Google's Material Design Principles.
 

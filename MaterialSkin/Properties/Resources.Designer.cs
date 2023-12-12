@@ -19,7 +19,7 @@ namespace MaterialSkin.Properties {
     // 类通过类似于 ResGen 或 Visual Studio 的工具自动生成的。
     // 若要添加或移除成员，请编辑 .ResX 文件，然后重新运行 ResGen
     // (以 /str 作为命令选项)，或重新生成 VS 项目。
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resources {
@@ -63,9 +63,9 @@ namespace MaterialSkin.Properties {
         /// <summary>
         ///   查找 System.Byte[] 类型的本地化资源。
         /// </summary>
-        public static byte[] SourceHanSansCN_Bold {
+        public static byte[] HarmonyOS_Sans_SC_Black {
             get {
-                object obj = ResourceManager.GetObject("SourceHanSansCN_Bold", resourceCulture);
+                object obj = ResourceManager.GetObject("HarmonyOS_Sans_SC_Black", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace MaterialSkin.Properties {
         /// <summary>
         ///   查找 System.Byte[] 类型的本地化资源。
         /// </summary>
-        public static byte[] SourceHanSansCN_Light {
+        public static byte[] HarmonyOS_Sans_SC_Bold {
             get {
-                object obj = ResourceManager.GetObject("SourceHanSansCN_Light", resourceCulture);
+                object obj = ResourceManager.GetObject("HarmonyOS_Sans_SC_Bold", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace MaterialSkin.Properties {
         /// <summary>
         ///   查找 System.Byte[] 类型的本地化资源。
         /// </summary>
-        public static byte[] SourceHanSansCN_Medium {
+        public static byte[] HarmonyOS_Sans_SC_Light {
             get {
-                object obj = ResourceManager.GetObject("SourceHanSansCN_Medium", resourceCulture);
+                object obj = ResourceManager.GetObject("HarmonyOS_Sans_SC_Light", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace MaterialSkin.Properties {
         /// <summary>
         ///   查找 System.Byte[] 类型的本地化资源。
         /// </summary>
-        public static byte[] SourceHanSansCN_Normal {
+        public static byte[] HarmonyOS_Sans_SC_Medium {
             get {
-                object obj = ResourceManager.GetObject("SourceHanSansCN_Normal", resourceCulture);
+                object obj = ResourceManager.GetObject("HarmonyOS_Sans_SC_Medium", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -103,9 +103,19 @@ namespace MaterialSkin.Properties {
         /// <summary>
         ///   查找 System.Byte[] 类型的本地化资源。
         /// </summary>
-        public static byte[] SourceHanSansCN_Regular {
+        public static byte[] HarmonyOS_Sans_SC_Regular {
             get {
-                object obj = ResourceManager.GetObject("SourceHanSansCN_Regular", resourceCulture);
+                object obj = ResourceManager.GetObject("HarmonyOS_Sans_SC_Regular", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Byte[] 类型的本地化资源。
+        /// </summary>
+        public static byte[] HarmonyOS_Sans_SC_Thin {
+            get {
+                object obj = ResourceManager.GetObject("HarmonyOS_Sans_SC_Thin", resourceCulture);
                 return ((byte[])(obj));
             }
         }
